@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="165dp"
+    android:layout_height="205dp"
+    android:background="@drawable/rectangle_6"
+    android:elevation="2dp" >
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="165dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/espresso"
+        android:src="@drawable/espresso" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="147dp"
+        android:gravity="top"
+        android:text="@string/espresso"
+        android:textAppearance="@style/some_id"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="177dp"
+        android:gravity="top"
+        android:text="@string/twoHundredRur"
+        android:textAppearance="@style/some_id_2" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="14dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="177dp"
+        android:gravity="top"
+        android:text="@string/zero"
+        android:textAppearance="@style/some_id_2" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/plus" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="?attr/colorPrimaryVariant" >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:gravity="center_horizontal"
+                android:text="@string/menu"
+                android:textAppearance="@style/text" />
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="86dp"
+                android:background="@drawable/line_2" />
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/some_id"
+            android:layout_width="match_parent"
+            android:layout_height="847dp">
+
+            <Button
+                android:id="@+id/buttonToPayment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="768dp"
+                android:background="@drawable/fill_rectangle"
+                android:text="@string/goToPayment"
+                android:textAppearance="@style/button"
+                android:theme="@style/button" />
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="641dp"
+                android:layout_marginTop="103dp"
+                android:gravity="center_horizontal"
+                android:numColumns="2"
+                android:verticalSpacing="13dp"
+                tools:ignore="NestedScrolling" />
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

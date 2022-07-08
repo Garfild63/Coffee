@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:background="?attr/colorPrimaryVariant" >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:gravity="center_horizontal"
+                android:text="@string/registration"
+                android:textAppearance="@style/text" />
+
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="86dp"
+                android:background="@drawable/line_2" />
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/some_id"
+            android:layout_width="match_parent"
+            android:layout_height="812dp">
+
+            <TextView
+                android:id="@+id/textViewE_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="278dp"
+                android:layout_marginStart="18dp"
+                android:text="@string/e_mail"
+                android:textAppearance="@style/smallText"
+                android:gravity="top" />
+
+            <EditText
+                android:id="@+id/editTextE_mail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="304dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/example"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="20dp"
+                android:paddingStart="18dp"
+                android:textAppearance="@style/text"
+                android:textColorHint="#AF9479"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="375dp"
+                android:layout_marginStart="18dp"
+                android:text="@string/password"
+                android:textAppearance="@style/smallText"
+                android:gravity="top" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="401dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/asterisks"
+                android:inputType="textPassword"
+                android:paddingEnd="20dp"
+                android:paddingStart="18dp"
+                android:textAppearance="@style/text"
+                android:textColorHint="#AF9479"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/textViewRepeatPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="472dp"
+                android:layout_marginStart="18dp"
+                android:text="@string/repeatPassword"
+                android:textAppearance="@style/smallText"
+                android:gravity="top" />
+
+            <EditText
+                android:id="@+id/editTextRepeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="498dp"
+                android:background="@drawable/rectangle"
+                android:hint="@string/asterisks"
+                android:inputType="textPassword"
+                android:paddingEnd="20dp"
+                android:paddingStart="18dp"
+                android:textAppearance="@style/text"
+                android:textColorHint="#AF9479"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/buttonRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="576dp"
+                android:background="@drawable/fill_rectangle"
+                android:text="@string/registration"
+                android:textAppearance="@style/button"
+                android:theme="@style/button"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

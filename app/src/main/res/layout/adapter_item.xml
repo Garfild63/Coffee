@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:background="@drawable/rectangle_1"
+    android:elevation="2dp" >
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:gravity="top"
+        android:text="@string/bedoev"
+        android:textAppearance="@style/text"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewDest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="41dp"
+        android:gravity="top"
+        android:text="@string/onekm"
+        android:textAppearance="@style/example"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
