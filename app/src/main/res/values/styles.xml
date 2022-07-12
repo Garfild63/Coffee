@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="largeText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textColor">#846340</item>
+    </style>
+    <style name="text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+    </style>
+    <style name="smallText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+    </style>
+    <style name="button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#F6E5D1</item>
+    </style>
+    <style name="example">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#AF9479</item>
+    </style>
+    <style name="example_2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#AF9479</item>
+    </style>
+    <style name="some_id">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#AF9479</item>
+    </style>
+    <style name="some_id_2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+    </style>
+    <style name="some_id_3">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#846340</item>
+    </style>
+</resources>
