@@ -36,7 +36,11 @@ public class PaymentFragment extends ListFragment {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             order.price = Integer.parseInt(requireArguments().getString("price" + i));
+=======
+            order.price = requireArguments().getString("price" + i);
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
             order.price = requireArguments().getString("price" + i);
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7

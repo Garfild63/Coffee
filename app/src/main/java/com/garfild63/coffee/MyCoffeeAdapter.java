@@ -4,7 +4,10 @@ import android.content.Context;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.graphics.BitmapFactory;
+=======
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
@@ -22,9 +25,12 @@ import android.widget.TextView;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.InputStream;
 import java.net.URL;
 
+=======
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
@@ -60,12 +66,17 @@ public class MyCoffeeAdapter extends ArrayAdapter<MyCoffee> {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(String.valueOf(coffee.price) + " руб");
         try {
             InputStream in = new URL(coffee.imageURL).openStream();
             ((ImageView) convertView.findViewById(R.id.imgView)).setImageBitmap(BitmapFactory.decodeStream(in));
         } catch (Exception e) {
         }
+=======
+        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(coffee.price);
+        ((ImageView) convertView.findViewById(R.id.imgView)).setImageResource(coffee.img);
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
         ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(coffee.price);
         ((ImageView) convertView.findViewById(R.id.imgView)).setImageResource(coffee.img);

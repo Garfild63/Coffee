@@ -49,7 +49,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:id="@+id/textViewEmail"
+=======
+                android:id="@+id/textViewE_mail"
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
                 android:id="@+id/textViewE_mail"
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
@@ -66,7 +70,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:text="@string/email"
+=======
+                android:text="@string/e_mail"
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
                 android:text="@string/e_mail"
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
@@ -83,7 +91,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:id="@+id/editTextEmail"
+=======
+                android:id="@+id/editTextE_mail"
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
                 android:id="@+id/editTextE_mail"
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7

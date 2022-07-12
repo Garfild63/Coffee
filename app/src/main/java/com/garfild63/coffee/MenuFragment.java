@@ -12,6 +12,7 @@ import android.widget.Toolbar;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.List;
 import java.util.Objects;
 
@@ -42,6 +43,8 @@ public class MenuFragment extends Fragment {
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -52,6 +55,9 @@ public class MenuFragment extends Fragment {
     int[] imgArr = {R.drawable.espresso, R.drawable.capuccino, R.drawable.hot_chocolate, R.drawable.latte, R.drawable.hot_chocolate, R.drawable.latte};
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
@@ -76,7 +82,11 @@ public class MenuFragment extends Fragment {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     bundle.putString("price" + quantity, String.valueOf(priceArr[i]));
+=======
+                    bundle.putString("price" + quantity, priceArr[i]);
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
                     bundle.putString("price" + quantity, priceArr[i]);
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
@@ -103,7 +113,10 @@ public class MenuFragment extends Fragment {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Toast.makeText(getActivity(), requireArguments().getString("id"), Toast.LENGTH_SHORT).show();
+=======
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
@@ -114,6 +127,7 @@ public class MenuFragment extends Fragment {
     }
 
     MyCoffee[] makeCoffee() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -159,6 +173,8 @@ public class MenuFragment extends Fragment {
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
         MyCoffee[] arr = new MyCoffee[nameArr.length];
 
         for (int i = 0; i < arr.length; i++) {
@@ -170,6 +186,9 @@ public class MenuFragment extends Fragment {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7

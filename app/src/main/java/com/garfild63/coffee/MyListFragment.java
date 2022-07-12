@@ -9,6 +9,7 @@ import android.widget.ListView;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -35,6 +36,8 @@ public class MyListFragment extends ListFragment {
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
@@ -47,6 +50,9 @@ public class MyListFragment extends ListFragment {
     String[] destArr = {"1 км от вас", "2 км от вас", "1 км от вас", "300 м от вас", "3 км от вас"};
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
@@ -70,6 +76,7 @@ public class MyListFragment extends ListFragment {
 
     @Override
     public void onListItemClick(@NonNull ListView l, @NonNull View v, int position, long id) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -120,6 +127,8 @@ public class MyListFragment extends ListFragment {
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
         Navigation.findNavController(v).navigate(R.id.action_listFragment_to_menuFragment);
     }
 
@@ -134,6 +143,9 @@ public class MyListFragment extends ListFragment {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+=======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7

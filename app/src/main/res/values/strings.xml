@@ -4,7 +4,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="email">e-mail</string>
+=======
+    <string name="e_mail">e-mail</string>
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
     <string name="e_mail">e-mail</string>
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7

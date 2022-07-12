@@ -26,7 +26,11 @@ public class MyCafeAdapter extends ArrayAdapter<MyCafe> {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         ((TextView) convertView.findViewById(R.id.textViewDest)).setText(String.valueOf(cafe.point.latitude + cafe.point.longitude) + " км от вас");
+=======
+        ((TextView) convertView.findViewById(R.id.textViewDest)).setText(cafe.dest);
+>>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 =======
         ((TextView) convertView.findViewById(R.id.textViewDest)).setText(cafe.dest);
 >>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
