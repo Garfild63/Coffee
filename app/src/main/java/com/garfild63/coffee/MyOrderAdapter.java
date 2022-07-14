@@ -35,23 +35,7 @@ public class MyOrderAdapter extends ArrayAdapter<MyOrder> {
         }
 
         ((TextView) convertView.findViewById(R.id.textViewName)).setText(order.name);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(String.valueOf(order.price) + " руб");
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(order.price);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(order.price);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(order.price);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(order.price);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(String.format(convertView.getResources().getString(R.string.rur), order.price));
         ((Button) convertView.findViewById(R.id.minusButton)).setOnClickListener(view -> {
             if (values[position] > 0) {
                 values[position]--;

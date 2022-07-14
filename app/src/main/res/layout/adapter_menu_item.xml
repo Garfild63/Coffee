@@ -12,8 +12,7 @@
         android:layout_height="137dp"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
-        android:contentDescription="@string/espresso"
-        android:src="@drawable/espresso" />
+        android:contentDescription="@string/espresso" />
 
     <TextView
         android:id="@+id/textViewName"
@@ -33,7 +32,7 @@
         android:layout_marginStart="11dp"
         android:layout_marginTop="177dp"
         android:gravity="top"
-        android:text="@string/twoHundredRur"
+        android:text="@string/rur"
         android:textAppearance="@style/some_id_2" />
 
     <Button

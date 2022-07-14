@@ -1,23 +1,7 @@
 <resources>
     <string name="app_name">Coffee</string>
     <string name="registration">Регистрация</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <string name="email">e-mail</string>
-=======
-    <string name="e_mail">e-mail</string>
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-    <string name="e_mail">e-mail</string>
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-    <string name="e_mail">e-mail</string>
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-    <string name="e_mail">e-mail</string>
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
     <string name="example">example@example.ru</string>
     <string name="password">Пароль</string>
     <string name="asterisks">******</string>
@@ -26,13 +10,14 @@
     <string name="enter">Войти</string>
     <string name="nearestCafes">Ближайшие кофейни</string>
     <string name="bedoev">BEDOEV COFFEE</string>
-    <string name="onekm">1 км от вас</string>
+    <string name="km">%d км от вас</string>
+    <string name="m">%d м от вас</string>
     <string name="onMap">На карте</string>
     <string name="map">Карта</string>
     <string name="menu">Меню</string>
     <string name="goToPayment">Перейти к оплате</string>
     <string name="espresso">Эспрессо</string>
-    <string name="twoHundredRur">200 руб</string>
+    <string name="rur">%d руб</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
     <string name="zero">0</string>

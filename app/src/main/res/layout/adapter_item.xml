@@ -24,7 +24,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="41dp"
         android:gravity="top"
-        android:text="@string/onekm"
+        android:text="@string/km"
         android:textAppearance="@style/example"
         tools:ignore="TextContrastCheck" />
 

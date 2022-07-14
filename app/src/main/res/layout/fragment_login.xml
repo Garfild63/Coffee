@@ -12,14 +12,14 @@
         <Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="88dp"
+            android:layout_height="44dp"
             android:background="?attr/colorPrimaryVariant" >
 
             <TextView
                 android:id="@+id/toolbar_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="55dp"
+                android:layout_marginTop="11dp"
                 android:gravity="center_horizontal"
                 android:text="@string/login"
                 android:textAppearance="@style/text" />
@@ -28,7 +28,7 @@
                 android:id="@+id/line_2"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginTop="86dp"
+                android:layout_marginTop="42dp"
                 android:background="@drawable/line_2" />
 
         </Toolbar>
@@ -46,65 +46,17 @@
             android:layout_height="812dp">
 
             <TextView
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 android:id="@+id/textViewEmail"
-=======
-                android:id="@+id/textViewE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:id="@+id/textViewE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:id="@+id/textViewE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:id="@+id/textViewE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="278dp"
                 android:layout_marginStart="18dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 android:text="@string/email"
-=======
-                android:text="@string/e_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:text="@string/e_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:text="@string/e_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:text="@string/e_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
                 android:textAppearance="@style/smallText"
                 android:gravity="top" />
 
             <EditText
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 android:id="@+id/editTextEmail"
-=======
-                android:id="@+id/editTextE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:id="@+id/editTextE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:id="@+id/editTextE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                android:id="@+id/editTextE_mail"
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginEnd="18dp"

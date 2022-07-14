@@ -31,35 +31,10 @@ android {
 }
 
 dependencies {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     implementation 'androidx.fragment:fragment:1.5.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     def nav_version = "2.5.0"
-=======
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-    implementation 'androidx.fragment:fragment:1.4.1'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    def nav_version = "2.4.2"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 
     // Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
@@ -78,21 +53,9 @@ dependencies {
     // Jetpack Compose Integration
     implementation "androidx.navigation:navigation-compose:$nav_version"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
     // The lite library only contains the map, traffic layer,
     // LocationManager, and UserLocationLayer and lets you download offline maps (in the paid version only).
     implementation 'com.yandex.android:maps.mobile:4.1.0-lite'

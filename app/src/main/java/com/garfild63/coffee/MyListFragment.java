@@ -6,10 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -27,37 +23,16 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MyListFragment extends ListFragment {
 
-    private static final String[] nameArr = {"BEDOEV COFFEE", "Coffee Like", "EM&DI Coffee and Snacks", "Коффе есть", "BEDOEV COFFEE 2"};
-    private MyCafe[] arr = new MyCafe[nameArr.length];
+    private final String[] nameArr = {"BEDOEV COFFEE", "Coffee Like", "EM&DI Coffee and Snacks", "Коффе есть", "BEDOEV COFFEE 2"};
+    private final MyCafe.Point[] pointArr = {
+            new MyCafe.Point(0.5, 0.5),
+            new MyCafe.Point(0.6, 1.4),
+            new MyCafe.Point(0.7, 0.3),
+            new MyCafe.Point(0.1, 0.2),
+            new MyCafe.Point(1.7, 1.3)};
+    private final MyCafe[] arr = new MyCafe[nameArr.length];
 
     private static final String BASE_URL = "http://185.244.172.108:8080/";
-=======
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-import android.widget.Toolbar;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.ListFragment;
-import androidx.navigation.Navigation;
-
-public class MyListFragment extends ListFragment {
-
-    String[] nameArr = {"BEDOEV COFFEE", "Coffee Like", "EM&DI Coffee and Snacks", "Коффе есть", "BEDOEV COFFEE 2"};
-    String[] destArr = {"1 км от вас", "2 км от вас", "1 км от вас", "300 м от вас", "3 км от вас"};
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 
     @Override
     public View onCreateView(LayoutInflater inflater,
@@ -76,10 +51,6 @@ public class MyListFragment extends ListFragment {
 
     @Override
     public void onListItemClick(@NonNull ListView l, @NonNull View v, int position, long id) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         Bundle bundle = new Bundle();
         bundle.putString("id", String.valueOf(arr[position].id));
         Navigation.findNavController(v).navigate(R.id.action_listFragment_to_menuFragment, bundle);
@@ -90,7 +61,7 @@ public class MyListFragment extends ListFragment {
             MyCafe cafe = new MyCafe();
             cafe.id = i;
             cafe.name = nameArr[i];
-            cafe.point = new MyCafe.Point(0, 0);
+            cafe.point = pointArr[i];
             arr[i] = cafe;
         }
         /* Retrofit retrofit = new Retrofit.Builder()
@@ -122,35 +93,6 @@ public class MyListFragment extends ListFragment {
                 Toast.makeText(getActivity(), t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }); */
-=======
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-        Navigation.findNavController(v).navigate(R.id.action_listFragment_to_menuFragment);
-    }
-
-    MyCafe[] makeCafe() {
-        MyCafe[] arr = new MyCafe[nameArr.length];
-
-        for (int i = 0; i < arr.length; i++) {
-            MyCafe cafe = new MyCafe();
-            cafe.name = nameArr[i];
-            cafe.dest = destArr[i];
-            arr[i] = cafe;
-        }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
         return arr;
     }
 }

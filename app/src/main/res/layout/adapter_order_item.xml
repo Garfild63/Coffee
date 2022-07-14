@@ -24,7 +24,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="41dp"
         android:gravity="top"
-        android:text="@string/twoHundredRur"
+        android:text="@string/rur"
         android:textAppearance="@style/example_2"
         tools:ignore="TextContrastCheck" />
 

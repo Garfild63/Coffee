@@ -9,10 +9,6 @@ import android.widget.GridView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import java.util.List;
 import java.util.Objects;
 
@@ -27,42 +23,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MenuFragment extends Fragment {
 
-    private static final String[] nameArr = {"Эспрессо", "Капучино", "Горячий шоколад", "Латте", "Горячий шоколад", "Латте"};
-    private static final int[] priceArr = {200, 200, 200, 200, 200, 200};
-    private static final String[] imageArr = {"http://wap.bodr.net/s.gif",
+    private final String[] nameArr = {"Эспрессо", "Капучино", "Горячий шоколад", "Латте", "Горячий шоколад", "Латте"};
+    private final int[] priceArr = {200, 200, 200, 200, 200, 200};
+    private final String[] imageArr = {
+            "http://wap.bodr.net/s.gif",
             "http://wap.bodr.net/s.gif",
             "http://wap.bodr.net/s.gif",
             "http://wap.bodr.net/s.gif",
             "http://wap.bodr.net/s.gif",
             "http://wap.bodr.net/s.gif"};
-    private MyCoffee[] arr = new MyCoffee[nameArr.length];
+    private final MyCoffee[] arr = new MyCoffee[nameArr.length];
 
     private static final String BASE_URL = "http://185.244.172.108:8080/";
-=======
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
-
-public class MenuFragment extends Fragment {
-
-    String[] nameArr = {"Эспрессо", "Капучино", "Горячий шоколад", "Латте", "Горячий шоколад", "Латте"};
-    String[] priceArr = {"200 руб", "200 руб", "200 руб", "200 руб", "200 руб", "200 руб"};
-    int[] imgArr = {R.drawable.espresso, R.drawable.capuccino, R.drawable.hot_chocolate, R.drawable.latte, R.drawable.hot_chocolate, R.drawable.latte};
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 
     @Override
     public View onCreateView(LayoutInflater inflater,
@@ -79,23 +51,7 @@ public class MenuFragment extends Fragment {
             for (int i = 0; i < nameArr.length; i++) {
                 if (MyCoffeeAdapter.values[i] != 0) {
                     bundle.putString("name" + quantity, nameArr[i]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                     bundle.putString("price" + quantity, String.valueOf(priceArr[i]));
-=======
-                    bundle.putString("price" + quantity, priceArr[i]);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                    bundle.putString("price" + quantity, priceArr[i]);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                    bundle.putString("price" + quantity, priceArr[i]);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-                    bundle.putString("price" + quantity, priceArr[i]);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
                     bundle.putString("value" + quantity, String.valueOf(MyCoffeeAdapter.values[i]));
                     quantity++;
                 }
@@ -110,27 +66,11 @@ public class MenuFragment extends Fragment {
         GridView g = (GridView) v.findViewById(R.id.gridView);
         MyCoffeeAdapter adapter = new MyCoffeeAdapter(getActivity(), makeCoffee());
         g.setAdapter(adapter);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         // Toast.makeText(getActivity(), requireArguments().getString("id"), Toast.LENGTH_SHORT).show();
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
         return v;
     }
 
     MyCoffee[] makeCoffee() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         for (int i = 0; i < arr.length; i++) {
             MyCoffee coffee = new MyCoffee();
             coffee.id = i;
@@ -168,32 +108,6 @@ public class MenuFragment extends Fragment {
                 Toast.makeText(getActivity(), t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }); */
-=======
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-        MyCoffee[] arr = new MyCoffee[nameArr.length];
-
-        for (int i = 0; i < arr.length; i++) {
-            MyCoffee coffee = new MyCoffee();
-            coffee.name = nameArr[i];
-            coffee.price = priceArr[i];
-            coffee.img = imgArr[i];
-            arr[i] = coffee;
-        }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
         return arr;
     }
 }

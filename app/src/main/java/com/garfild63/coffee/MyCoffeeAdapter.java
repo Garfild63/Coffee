@@ -1,19 +1,10 @@
 package com.garfild63.coffee;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,21 +13,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.URL;
 
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
 public class MyCoffeeAdapter extends ArrayAdapter<MyCoffee> {
 
     public static int[] values;
@@ -48,6 +29,7 @@ public class MyCoffeeAdapter extends ArrayAdapter<MyCoffee> {
         tv = new TextView[arr.length];
     }
 
+    @SuppressLint("StaticFieldLeak")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -63,32 +45,23 @@ public class MyCoffeeAdapter extends ArrayAdapter<MyCoffee> {
         }
 
         ((TextView) convertView.findViewById(R.id.textViewName)).setText(coffee.name);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(String.valueOf(coffee.price) + " руб");
-        try {
-            InputStream in = new URL(coffee.imageURL).openStream();
-            ((ImageView) convertView.findViewById(R.id.imgView)).setImageBitmap(BitmapFactory.decodeStream(in));
-        } catch (Exception e) {
-        }
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(coffee.price);
-        ((ImageView) convertView.findViewById(R.id.imgView)).setImageResource(coffee.img);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(coffee.price);
-        ((ImageView) convertView.findViewById(R.id.imgView)).setImageResource(coffee.img);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(coffee.price);
-        ((ImageView) convertView.findViewById(R.id.imgView)).setImageResource(coffee.img);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(coffee.price);
-        ((ImageView) convertView.findViewById(R.id.imgView)).setImageResource(coffee.img);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+        ((TextView) convertView.findViewById(R.id.textViewPrice)).setText(String.format(convertView.getResources().getString(R.string.rur), coffee.price));
+        ImageView imageView = ((ImageView) convertView.findViewById(R.id.imgView));
+        new AsyncTask<String, Integer, Bitmap>() {
+            protected Bitmap doInBackground(String... urls) {
+                Bitmap bmp = null;
+                try {
+                    bmp = BitmapFactory.decodeStream(new URL(urls[0]).openStream());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                return bmp;
+            }
+
+            protected void onPostExecute(Bitmap result) {
+                imageView.setImageBitmap(result);
+            }
+        }.execute(coffee.imageURL);
         ((Button) convertView.findViewById(R.id.minusButton)).setOnClickListener(view -> {
             if (values[position] > 0) {
                 values[position]--;

@@ -23,23 +23,14 @@ public class MyCafeAdapter extends ArrayAdapter<MyCafe> {
         }
 
         ((TextView) convertView.findViewById(R.id.textViewName)).setText(cafe.name);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        ((TextView) convertView.findViewById(R.id.textViewDest)).setText(String.valueOf(cafe.point.latitude + cafe.point.longitude) + " км от вас");
-=======
-        ((TextView) convertView.findViewById(R.id.textViewDest)).setText(cafe.dest);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewDest)).setText(cafe.dest);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewDest)).setText(cafe.dest);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-        ((TextView) convertView.findViewById(R.id.textViewDest)).setText(cafe.dest);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
+        double dest = cafe.point.latitude + cafe.point.longitude;
+        String destString;
+        if (dest >= 1) {
+            destString = String.format(convertView.getResources().getString(R.string.km), (int) dest);
+        } else {
+            destString = String.format(convertView.getResources().getString(R.string.m), (int) (dest * 1000));
+        }
+        ((TextView) convertView.findViewById(R.id.textViewDest)).setText(destString);
 
         return convertView;
     }

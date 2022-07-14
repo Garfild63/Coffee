@@ -33,23 +33,7 @@ public class PaymentFragment extends ListFragment {
         for (int i = 0; i < arr.length; i++) {
             MyOrder order = new MyOrder();
             order.name = requireArguments().getString("name" + i);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             order.price = Integer.parseInt(requireArguments().getString("price" + i));
-=======
-            order.price = requireArguments().getString("price" + i);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-            order.price = requireArguments().getString("price" + i);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-            order.price = requireArguments().getString("price" + i);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
-=======
-            order.price = requireArguments().getString("price" + i);
->>>>>>> 5b2d7d6d53763c8eeac1c4a0eebed2804287acd7
             order.value = Integer.parseInt(requireArguments().getString("value" + i));
             arr[i] = order;
         }
