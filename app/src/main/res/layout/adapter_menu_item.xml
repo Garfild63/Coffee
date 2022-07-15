@@ -20,7 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginTop="147dp"
-        android:gravity="top"
         android:text="@string/espresso"
         android:textAppearance="@style/some_id"
         tools:ignore="TextContrastCheck" />
@@ -31,7 +30,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginTop="177dp"
-        android:gravity="top"
         android:text="@string/rur"
         android:textAppearance="@style/some_id_2" />
 
@@ -49,7 +47,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="117dp"
         android:layout_marginTop="177dp"
-        android:gravity="top"
         android:text="@string/zero"
         android:textAppearance="@style/some_id_2" />
 

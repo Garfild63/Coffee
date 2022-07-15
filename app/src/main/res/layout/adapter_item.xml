@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="14dp"
-        android:gravity="top"
         android:text="@string/bedoev"
         android:textAppearance="@style/text"
         tools:ignore="TextContrastCheck" />
@@ -23,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="41dp"
-        android:gravity="top"
         android:text="@string/km"
         android:textAppearance="@style/example"
         tools:ignore="TextContrastCheck" />

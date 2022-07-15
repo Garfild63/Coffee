@@ -26,12 +26,12 @@ public class MenuFragment extends Fragment {
     private final String[] nameArr = {"Эспрессо", "Капучино", "Горячий шоколад", "Латте", "Горячий шоколад", "Латте"};
     private final int[] priceArr = {200, 200, 200, 200, 200, 200};
     private final String[] imageArr = {
-            "http://wap.bodr.net/s.gif",
-            "http://wap.bodr.net/s.gif",
-            "http://wap.bodr.net/s.gif",
-            "http://wap.bodr.net/s.gif",
-            "http://wap.bodr.net/s.gif",
-            "http://wap.bodr.net/s.gif"};
+            "https://github.com/Garfild63/Coffee/blob/master/app/src/main/res/drawable/espresso.png?raw=true",
+            "https://github.com/Garfild63/Coffee/blob/master/app/src/main/res/drawable/capuccino.png?raw=true",
+            "https://github.com/Garfild63/Coffee/blob/master/app/src/main/res/drawable/hot_chocolate.png?raw=true",
+            "https://github.com/Garfild63/Coffee/blob/master/app/src/main/res/drawable/latte.png?raw=true",
+            "https://github.com/Garfild63/Coffee/blob/master/app/src/main/res/drawable/hot_chocolate.png?raw=true",
+            "https://github.com/Garfild63/Coffee/blob/master/app/src/main/res/drawable/latte.png?raw=true"};
     private final MyCoffee[] arr = new MyCoffee[nameArr.length];
 
     private static final String BASE_URL = "http://185.244.172.108:8080/";
@@ -66,7 +66,6 @@ public class MenuFragment extends Fragment {
         GridView g = (GridView) v.findViewById(R.id.gridView);
         MyCoffeeAdapter adapter = new MyCoffeeAdapter(getActivity(), makeCoffee());
         g.setAdapter(adapter);
-        // Toast.makeText(getActivity(), requireArguments().getString("id"), Toast.LENGTH_SHORT).show();
         return v;
     }
 

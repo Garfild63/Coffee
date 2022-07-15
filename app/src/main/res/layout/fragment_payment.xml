@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+	android:orientation="vertical">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -34,51 +35,52 @@
         </Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
+	
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="15dp" />
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginEnd="16dp"
+		android:layout_marginStart="10dp"
+		android:divider="@null"
+		android:dividerHeight="6dp" />
+		
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="22dp" />
 
-        <RelativeLayout
-            android:id="@+id/some_id"
-            android:layout_width="match_parent"
-            android:layout_height="812dp">
+	<TextView
+		android:id="@+id/textViewPleaseWait"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="13dp"
+		android:layout_marginStart="13dp"
+		android:gravity="center_horizontal"
+		android:text="@string/pleaseWait"
+		android:textAppearance="@style/largeText" />
+		
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="22dp" />
 
-            <ListView
-                android:id="@android:id/list"
-                android:layout_width="match_parent"
-                android:layout_height="225dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="103dp"
-                android:divider="@null"
-                android:dividerHeight="6dp"
-                tools:ignore="NestedScrolling" />
+	<Button
+		android:id="@+id/buttonPay"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_marginEnd="18dp"
+		android:layout_marginStart="19dp"
+		android:background="@drawable/fill_rectangle"
+		android:text="@string/pay"
+		android:textAppearance="@style/button"
+		android:theme="@style/button" />
+				
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="32dp" />
 
-            <TextView
-                android:id="@+id/textViewPleaseWait"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="13dp"
-                android:layout_marginStart="13dp"
-                android:layout_marginTop="486dp"
-                android:gravity="center_horizontal"
-                android:text="@string/pleaseWait"
-                android:textAppearance="@style/largeText" />
-
-            <Button
-                android:id="@+id/buttonPay"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginEnd="18dp"
-                android:layout_marginStart="19dp"
-                android:layout_marginTop="733dp"
-                android:background="@drawable/fill_rectangle"
-                android:text="@string/pay"
-                android:textAppearance="@style/button"
-                android:theme="@style/button" />
-
-        </RelativeLayout>
-    </ScrollView>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

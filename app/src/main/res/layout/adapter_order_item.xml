@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="14dp"
-        android:gravity="top"
         android:text="@string/espresso"
         android:textAppearance="@style/text"
         tools:ignore="TextContrastCheck" />
@@ -23,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="41dp"
-        android:gravity="top"
         android:text="@string/rur"
         android:textAppearance="@style/example_2"
         tools:ignore="TextContrastCheck" />
@@ -34,7 +32,7 @@
         android:layout_height="2dp"
         android:layout_marginStart="269dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/minus_2" />
+		android:background="@drawable/minus_2" />
 
     <TextView
         android:id="@+id/textViewNumber"
@@ -42,7 +40,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="296dp"
         android:layout_marginTop="27dp"
-        android:gravity="top"
         android:text="@string/zero"
         android:textAppearance="@style/some_id_3" />
 
